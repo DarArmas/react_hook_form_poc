@@ -3,6 +3,8 @@
 
 This project demonstrates the use of React Hook Form with Zod for form validation and a custom input component.
 
+### [NOTION DOCS](https://various-leo-ed0.notion.site/React-Hook-Forms-98d590460a01486c91bf7b62efaa6c92?pvs=25)
+
 ## Installation
 
 To get started, install the required dependencies:
