@@ -3,12 +3,12 @@ import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
 import { CustomInput } from "../CustomInput/CustomInput";
 import { FormValues, schema } from "../../models";
 
-
-
 export const CustomForm = () => {
   // const [formValues, setFormValues] = React.useState<FormValues>({} as FormValues);
   const { control, handleSubmit, formState: { errors } } = useForm<FormValues>({
     resolver: zodResolver(schema),
+    mode: "onBlur", //recomendacion
+    defaultValues: { name: "Dar", email: "", password: "", confirmPassword: "" },
   });
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
